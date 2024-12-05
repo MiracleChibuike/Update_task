@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Todo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            padding: 10px 20px;
+        }
+        .add_Button{
+            position: fixed;
+            /* left: 0; */
+            right: 0;
+            bottom: 0;
+            margin: 0 30px 40px 0;
+        }
+        .task_add{
+            background: #147117;
+            color: #fff;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .task_Body{
+            margin: 30px 0 0 0;
+        }
+        .test{
+            display: flex;
+            justify-content: space-between;
+            background: #eaf5f5;
+            padding: 12px 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px #020202;
+            margin: 10px 0;
+        }
+        .task_Content{
+            padding: 0 120px 0 0;
+        }
+        .del_btn{
+            border: none;
+            background: #cc2f2f;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px 25px;
+            cursor: pointer;
+        }
+        #addTask_btn{
+             border: none;
+            background: #147117;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px 25px;
+            cursor: pointer;
+            position: relative;
+            left: 200px;
+        }
+        #note_Input{
+            width: 50%;
+            border: 1px solid #147117;
+            border-radius: 25px;
+            padding: 10px 15px;
+            font-size: 1rem;
+            box-shadow: 0 0 10px #020202;
+            outline: none;   
+        }
+        ::placeholder{
+            color: rgb(120, 120, 120);
+            font-size: 15px;
+        }
+        .input_Add{
+            /* position: absolute;
+            left: 0;
+            right: 0;
+            top: 0; */
+            margin: 10px 10px;
+            display: flex;
+            content-visibility: hidden;
+            /* display: none;       */
+            
+        }
+        .activate{
+            content-visibility: visible;
+        }
+        /* .input_Add .activate{
+            content-visibility: visible;
+        } */
+        /* .title{
+            position: relative;
+            top: 70px;
+        }
+        .task_Body{
+            position: relative;
+            top: 100px;
+        } */
+        @media screen and (min-width: 0) and (max-width: 750px) {
+             .task_Content{
+            padding: 0 10px 0 0;
+        }
+        .input_Add{
+            display: flex;
+            flex-direction: column;
+         
+        }
+        #note_Input{
+            width: 100%;
+        }
+        .Add{
+            margin: 15px 0 0 0;
+            position: relative;
+            left: -70px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="input_Add">
+            <textarea name="" id="note_Input" placeholder="Enter Your Note">
+
+            </textarea>
+          <div class="Add">
+            <button id="addTask_btn">Add Task</button>
+          </div>
+        </div>
+        <div class="title">
+            <h2>NotePad</h2>
+        </div>
+        <div class="add_Button">
+            <button class="task_add">Create +</button>
+        </div>
+        <div class="task_Body">
+       
+        </div>
+    </div>
+</body>
+
+<script src="index.js"></script>
+</html>
