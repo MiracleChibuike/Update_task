@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Todo</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Cabin+Condensed&family=Dancing+Script&family=Jost&family=Kalam&family=Kanit&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+Display:wght@600&family=Odibee+Sans&family=PT+Sans+Narrow&family=Sansita+Swashed:wght@300..900&family=Signika+Negative:wght@300..700&family=Slabo+27px&family=Syne:wght@400..800&family=Ubuntu:wght@500&family=Yesteryear&display=swap');
+    </style>
+    <style>
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+             font-family: "Mulish", serif;
         }
         .container{
             padding: 10px 20px;
@@ -20,13 +24,15 @@
             bottom: 0;
             margin: 0 30px 40px 0;
         }
-        .task_add{
-            background: #147117;
+        .add_Button i{
+            background: #365d38;
+            box-shadow: 0 0 8px #020202;
             color: #fff;
-            width: 70px;
-            height: 70px;
+            width: 45px;
+            height: 45px;
             border-radius: 50%;
-            padding: 10px;
+           text-align: center;
+           padding: 13px 0 0 0;
             border: none;
             cursor: pointer;
         }
@@ -67,7 +73,7 @@
             width: 50%;
             border: 1px solid #147117;
             border-radius: 25px;
-            padding: 10px 15px;
+            padding: 5px 15px;
             font-size: 1rem;
             box-shadow: 0 0 10px #020202;
             outline: none;   
@@ -135,13 +141,13 @@
             <h2>NotePad</h2>
         </div>
         <div class="add_Button">
-            <button class="task_add">Create +</button>
+            <i class="fa-solid fa-plus task_add"></i>
         </div>
         <div class="task_Body">
        
         </div>
     </div>
 </body>
-
+<script src="https://kit.fontawesome.com/9b5c4c6b23.js" crossorigin="anonymous"></script>
 <script src="index.js"></script>
 </html>

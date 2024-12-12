@@ -15,7 +15,6 @@ const show_Input = () => {
     // input_Container.classList.toggle("activate");
      }
    } catch (error) {
-    
    }
 };
 
